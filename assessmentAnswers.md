@@ -23,7 +23,9 @@ let avg = total / avgArray.length
 console.log(highSaleArray)
 console.log(avg)
 ## 4 
-.num1 {
+
+<!-- the text might be off beacuse of the id selector. I apologize. -->
+#num1 {
     color: rgb(255,0,0)
 }
 
