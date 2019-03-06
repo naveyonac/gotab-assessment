@@ -4,13 +4,24 @@ SELECT SALES_AGENTS.AGENT_NAME, SALES_RECORDS.AMOUNT, DEPARTEMENTS.DEPARTEMENT_N
 Attached picture in ./pictures/num2
 ## 3
 let highSaleArray = []
+let avgArray = []
 for (t = 0; t<Results.length; t++) {
     if (Results[t].Sales > 2000) {
         highSaleArray.push(Results[t].Name)
+        avgArray.push(Results[t].Sales)
     } 
-    else t++
+    else
+        avgArray.push(Results[t].Sales) 
+        t++
 }
+let total = 0
+for(i = 0; i < avgArray.length; i++) {
+    total += avgArray[i]
+}
+let avg = total / avgArray.length
+
 console.log(highSaleArray)
+console.log(avg)
 ## 4 
 .num1 {
     color: rgb(255,0,0)
